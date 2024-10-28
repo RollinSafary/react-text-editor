@@ -1,0 +1,49 @@
+{
+  "name": "@rollinsafary/react-text-editor",
+  "version": "0.0.1",
+  "description": "A feature-rich text editor component built with React and Draft.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && npm run copy-css",
+    "dev": "npm run build",
+    "copy-css": "ts-node scripts/copy-css.ts",
+    "prepare": "npm run build",
+    "link": "npm link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RollinSafary/react-text-editor.git"
+  },
+  "keywords": [
+    "react",
+    "text-editor",
+    "editor"
+  ],
+  "author": "RollinSafary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RollinSafary/react-text-editor/issues"
+  },
+  "homepage": "https://github.com/RollinSafary/react-text-editor#readme",
+  "dependencies": {
+    "dompurify": "^3.1.7",
+    "draft-js": "^0.11.7",
+    "draft-js-export-html": "^1.4.1",
+    "draft-js-import-html": "^1.4.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.0.5",
+    "@types/draft-js": "^0.11.18",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
